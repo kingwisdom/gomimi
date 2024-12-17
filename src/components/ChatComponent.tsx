@@ -10,7 +10,7 @@ interface Message {
 }
 
 const ChatComponent: React.FC = () => {
-    const [input, setInput] = useState<string>('');
+    // const [input, setInput] = useState<string>('');
     const [jobDescription, setJobDescription] = useState<string>('');
     const [currentCV, setCurrentCV] = useState<string>('');
     const [customPrompt, setCustomPrompt] = useState<string>('Generate a CV and cover letter based on the job description and current CV.');

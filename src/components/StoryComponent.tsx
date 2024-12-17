@@ -15,7 +15,7 @@ interface StoryPrompt {
 }
 
 const StoryComponent: React.FC = () => {
-    const [storyPrompt, setStory] = useState<StoryPrompt[]>([
+    const [storyPrompt] = useState<StoryPrompt[]>([
         { id: 0, title: '' },
         { id: 1, title: 'Tell me a sweet bed time story?' },
         { id: 2, title: 'Tell this story in the style of a children\'s book' },
