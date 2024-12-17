@@ -1,6 +1,6 @@
 import { Outlet } from "react-router-dom";
-// import Footer from "../component/Footer";
 import { Toaster } from "react-hot-toast";
+import Footer from "../components/Footer";
 // import 'react-toastify/dist/ReactToastify.css';
 
 
@@ -9,7 +9,7 @@ export default function Wrapper() {
     <>
       {/* <Navbar /> */}
       <Outlet />
-      {/* <Footer /> */}
+      <Footer />
       <Toaster />
     </>
   );
