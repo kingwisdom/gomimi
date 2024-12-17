@@ -14,7 +14,7 @@ const Footer = () => {
                     <FaBook className="h-5 w-5" />
                 </button>
             </Link>
-            <Link to="/about">
+            <Link to="/info">
                 <button>
                     <FaInfo className="h-5 w-5" />
                 </button>

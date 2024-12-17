@@ -2,6 +2,7 @@ import { createBrowserRouter } from "react-router-dom";
 import Home from "../pages/Home";
 import Wrapper from "../layouts/Wrapper";
 import Story from "../pages/Story";
+import About from "../pages/About";
 
 
 const routers = createBrowserRouter([
@@ -10,7 +11,7 @@ const routers = createBrowserRouter([
     children: [
       { path: "/", element: <Home /> },
       { path: "/story", element: <Story /> },
-      // { path: "/visit/:destination", element: <VisitWrapper /> },
+      { path: "/info", element: <About /> },
     ],
   },
 ]);
