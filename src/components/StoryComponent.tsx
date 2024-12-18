@@ -110,10 +110,6 @@ const StoryComponent: React.FC = () => {
 
     return (
         <div className="flex flex-col h-auto">
-            {/* Header */}
-            <div className="bg-yellow-400 text-white p-4">
-                <h3 className="text-lg font-bold text-right">Welcome to AI Story Teller</h3>
-            </div>
 
             <div role="alert" className="alert">
                 <FaInfo size={12} className="text-gray-500 animate-pulse" />

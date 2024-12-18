@@ -1,12 +1,12 @@
-import { FaBook, FaHome, FaInfo } from "react-icons/fa"
+import { FaBook, FaBriefcase, FaHome, FaInfo } from "react-icons/fa"
 import { Link } from "react-router-dom"
 
 const Footer = () => {
     return (
         <div className="btm-nav">
-            <Link to="/">
+            <Link to="/job">
                 <button className="active">
-                    <FaHome className="h-5 w-5" />
+                    <FaBriefcase className="h-5 w-5" />
                 </button>
             </Link>
             <Link to="/story">

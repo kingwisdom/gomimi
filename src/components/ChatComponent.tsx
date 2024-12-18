@@ -2,7 +2,7 @@ import { useState, ChangeEvent, useEffect, useRef } from 'react';
 import Markdown from 'react-markdown';
 import { callAI } from '../services/callService';
 import toast from 'react-hot-toast';
-import { FaCopy } from 'react-icons/fa';
+import { FaCopy, FaInfo } from 'react-icons/fa';
 
 interface Message {
     role: 'system' | 'user' | 'assistant';
@@ -124,9 +124,9 @@ const ChatComponent: React.FC = () => {
     return (
         <>
             <div className="flex flex-col">
-                {/* Header */}
-                <div className="bg-yellow-400 text-white p-4">
-                    <h3 className="text-lg font-bold text-right">Welcome to AI Job Chat Assistant</h3>
+                <div role="alert" className="alert">
+                    <FaInfo size={12} className="text-gray-500 animate-pulse" />
+                    <span>Generate a CV and cover letter based on the job description and current CV.</span>
                 </div>
 
                 {/* Job Description and Current CV Section */}
@@ -180,7 +180,7 @@ const ChatComponent: React.FC = () => {
                             </div>
                         </div>
                     ))}
-                    {loading && <p className="text-gray-500">Assistant is typing...</p>}
+                    {loading && <p className="text-gray-500 text-center">Assistant is typing...</p>}
                     <div ref={endRef} />
                 </div>
             </div>
