@@ -1,4 +1,4 @@
-import { FaBook, FaBriefcase, FaHome, FaInfo } from "react-icons/fa"
+import { FaBook, FaBriefcase, FaInfo } from "react-icons/fa"
 import { Link } from "react-router-dom"
 
 const Footer = () => {
