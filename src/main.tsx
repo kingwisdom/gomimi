@@ -9,3 +9,5 @@ createRoot(document.getElementById('root')!).render(
     <RouterProvider router={routers} />
   </StrictMode>,
 )
+
+//npx shadcn@latest add accordion avatar button card dialog form input label navigation-menu popover progress select separator sheet sidebar skeleton switch table tabs textarea toggle tooltip
