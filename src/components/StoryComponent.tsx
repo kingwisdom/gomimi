@@ -140,7 +140,7 @@ const StoryComponent: React.FC = () => {
                         </div>
                     </div>
                 ))}
-                {loading && <p className="text-gray-500">Assistant is typing...</p>}
+                {loading && <p className="text-gray-500">AI is thinking...</p>}
                 <div ref={endRef} />
             </div>
 

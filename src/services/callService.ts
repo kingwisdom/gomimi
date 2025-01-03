@@ -7,7 +7,7 @@ export const callAI = async (messages: any[], userMessage: any) => {
             Authorization: `Bearer ${import.meta.env.VITE_AI_KEY}`,
         },
         body: JSON.stringify({
-            model: 'gpt-4o-mini',
+            model: 'gpt-4o',
             messages: [
                 { role: 'system', content: 'You are a helpful assistant.' },
                 ...messages,

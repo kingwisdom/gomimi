@@ -180,7 +180,7 @@ const ChatComponent: React.FC = () => {
                             </div>
                         </div>
                     ))}
-                    {loading && <p className="text-gray-500 text-center">Assistant is typing...</p>}
+                    {loading && <p className="text-gray-500 text-center">AI is thinking...</p>}
                     <div ref={endRef} />
                 </div>
             </div>
